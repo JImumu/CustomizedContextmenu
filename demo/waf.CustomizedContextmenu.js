@@ -1,6 +1,5 @@
 var myContextmenu = new jc.js.util.CustomizedContextmenu();
 
-myContextmenu.staticDomainImg = "http://static.biedese.cn/image2/";
 myContextmenu.contextmenuCallerClassName = "customizedContextmenuCallerxx";
 
 var newItem = new myContextmenu.contextmenuItemConstructor()
