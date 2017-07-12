@@ -5,9 +5,6 @@ var jc=jc||{};
 (function(nameSpace){
 	function CustomizedContextmenu(){
 		var _this = this;
-		this.staticDomainImg = undefined;
-		this.staticDomainVideo = undefined;
-		this.staticDomainAudio = undefined;
 		this.actionWhenContextmenuShow = undefined;
 		this.contextmenuCallerClassName = "customizedContextmenuCaller";
 		this.contextmenu = $("<div>");
