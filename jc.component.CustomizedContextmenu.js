@@ -5,6 +5,9 @@ var jc=jc||{};
 (function(nameSpace){
 	function CustomizedContextmenu(){
 		var _this = this;
+		this.staticDomainImg = undefined;
+		this.staticDomainVideo = undefined;
+		this.staticDomainAudio = undefined;
 		this.actionWhenContextmenuShow = undefined;
 		this.contextmenuCallerClassName = "customizedContextmenuCaller";
 		this.contextmenu = $("<div>");
@@ -25,6 +28,7 @@ var jc=jc||{};
 			$("."+_this.contextmenuCallerClassName).on("contextmenu",function(e){
 				e.preventDefault();
 				$(this).css("background-color","#a5cbf7");
+				_this.contextmenuCaller = $(this);
 				if(typeof _this.actionWhenContextmenuShow == "function"){
 					_this.actionWhenContextmenuShow(this);
 				}
@@ -46,7 +50,7 @@ var jc=jc||{};
 		}
 		
 	}
-	CustomizedContextmenu.prototype.contextmenuItemConstructor = function(){
+	CustomizedContextmenu.prototype.ContextmenuItem = function(){
 		this.name = undefined;
 		this.action = undefined;
 	};
