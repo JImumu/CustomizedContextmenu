@@ -27,7 +27,7 @@ var jc=jc||{};
 		function bindEventToggleContextmenu(){
 			$("."+_this.contextmenuCallerClassName).on("contextmenu",function(e){
 				e.preventDefault();
-				$(this).css("background-color","#a5cbf7");
+				//$(this).css("background-color","#a5cbf7");
 				_this.contextmenuCaller = $(this);
 				if(typeof _this.actionWhenContextmenuShow == "function"){
 					_this.actionWhenContextmenuShow(this);
